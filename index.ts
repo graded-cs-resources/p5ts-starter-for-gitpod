@@ -1,7 +1,9 @@
 function setup() {
     createCanvas(400, 600);
     textSize(32);
+    textStyle("bold");
     textAlign(CENTER);
+    strokeWeight(1.5);
 }
 
 function draw() {
@@ -17,6 +19,8 @@ function draw() {
 
     ellipse(mouseX, mouseY, 80, 80);
 
-    fill("red");
+    fill("white");
+    stroke("red");
     text("Welcome to p5ts!",width/2,50);
+
 }
