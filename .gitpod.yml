@@ -1,7 +1,7 @@
 tasks:
  - init: npm install && npm install -g browser-sync
    command: browser-sync -f *.html -f *.js --no-open --no-ui
-   command: tsc --watch
+ - command: tsc --watch
 ports:
  - port: 3000
    onOpen: open-preview

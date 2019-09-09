@@ -1,8 +1,9 @@
 {
   "files.exclude": {
-    ".git*": true,
+    ".gitod.yml": true,
     "global.d.ts": true,
     "node_modules": true,
-    "package*.json": true
+    "package*.json": true,
+    ".gitignore":true
   }
 }

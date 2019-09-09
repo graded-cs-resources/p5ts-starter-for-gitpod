@@ -4,9 +4,7 @@
     "node_modules": true,
     "package*.json": true,
     ".vscode": true,
-    ".theia": true,
     ".gitignore": true,
-    ".gitpod.yml": true,
     "tsconfig.json": true
   }
 }
