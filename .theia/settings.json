@@ -1,9 +1,14 @@
 {
   "files.exclude": {
-    ".gitod.yml": true,
+    ".gitpod.yml": true,
     "global.d.ts": true,
     "node_modules": true,
     "package*.json": true,
-    ".gitignore":true
+    ".gitignore":true,
+    ".theia":true,
+    ".vscode":true,
+    ".git":true,
+    "*.js":true,
+    "tsconfig.json":true
   }
 }

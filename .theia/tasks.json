@@ -4,7 +4,12 @@
         {
             "label":"serve",
             "type": "shell",
-            "command":"browser-sync -f *.html -f *.js --no-open --no-ui"
+            "command":"browser-sync -f *.html -f *.js --no-open --no-ui --listen 0.0.0.0"
+        },
+        {
+            "label":"tsc watch",
+            "type":"shell",
+            "command":"tsc --watch"
         }
     ]
 }
