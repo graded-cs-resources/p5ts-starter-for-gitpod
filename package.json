@@ -7,10 +7,15 @@
     "p5": "^0.9.0"
   },
   "devDependencies": {
-    "@types/p5": "^0.9.0"
+    "@types/p5": "^0.9.0",
+    "browser-sync": "^2.26.7",
+    "npm-run-all": "^4.1.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser-sync": "browser-sync -f *.html -f *.js --no-open --no-ui --listen 0.0.0.0",
+    "tsc-watch":"tsc --watch",
+    "serve": "npm-run-all --parallel browser-sync tsc-watch"
   },
   "repository": {
     "type": "git",

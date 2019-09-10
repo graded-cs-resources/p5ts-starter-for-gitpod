@@ -1,3 +1,6 @@
+// if this is not working or there are many errors,
+// open a terminal and type `npm install` to install dependencies
+
 function setup() {
     createCanvas(400, 600);
     textSize(32);
