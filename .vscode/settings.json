@@ -2,11 +2,13 @@
   "files.exclude": {
     "node_modules": true,
     ".gitignore": true,
-    ".theia": true,
-    ".vscode": true,
     ".git": true,
     "*.js": true,
     "global.d.ts": true,
-    "tsconfig.json": true
+    "tsconfig.json": true,
+    "package-lock.json": true,
+    "package.json": true,
+    ".theia": true,
+    ".vscode": true
   }
 }

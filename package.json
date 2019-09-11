@@ -13,9 +13,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "browser-sync": "browser-sync -f *.html -f *.js --no-open --no-ui --listen 0.0.0.0",
-    "tsc-watch":"tsc --watch",
-    "serve": "npm-run-all --parallel browser-sync tsc-watch"
+    "vscode-serve": "browser-sync -f *.html -f *.js",
+    "gitpod-serve": "browser-sync -f *.html -f *.js --no-ui --no-open --listen 0.0.0.0",
+    "watch":"tsc --watch",
+    "gitpod-build-and-serve": "npm-run-all --parallel watch gitpod-serve",
+    "vscode-build-and-serve": "npm-run-all --parallel watch vscode-serve"
   },
   "repository": {
     "type": "git",

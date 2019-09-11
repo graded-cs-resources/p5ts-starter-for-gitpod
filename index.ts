@@ -1,29 +1,43 @@
-// if this is not working or there are many errors,
-// open a terminal and type `npm install` to install dependencies
 
+/** runs as soon as the assets are available */
 function setup() {
-    createCanvas(400, 600);
-    textSize(32);
-    textStyle("bold");
-    textAlign(CENTER);
-    strokeWeight(1.5);
+  // create a canvas
+  createCanvas(400, 600);
+  // set settings so everything is centered
+  textAlign(CENTER, CENTER);
+  rectMode(CENTER);
+  imageMode(CENTER);
+
+  // draw a background color (once) - pale yellow
+  background("lightyellow");
+  
 }
 
+/** runs on a continuous loop after setup() runs */
 function draw() {
-
-    if (mouseIsPressed) {
-        fill(0);
-        stroke(255);
-    }
-    else {
-        fill(255);
-        stroke(0);
-    }
-
-    ellipse(mouseX, mouseY, 80, 80);
-
+  // make my circles black if the mouse is pressed
+  // leave it white otherwise
+  if (mouseIsPressed) {
+    fill("black");
+    stroke("white");
+  } else {
     fill("white");
-    stroke("red");
-    text("Welcome to p5ts!",width/2,50);
-
+    stroke("black");
+  }
+  // draw a circle where the mouse is
+  ellipse(mouseX, mouseY, 20, 20);
+  // write our welcome text
+  writeText();
+}
+/** writes our welcome text and background rectangle */
+function writeText() {
+  //draw text background rectangle
+  fill("pink");
+  stroke("black");
+  rect(width / 2, 50, 300, 50);
+  //write the text
+  fill("black");
+  stroke("black");
+  textSize(32);
+  text("Welcome to p5js!", width / 2, 50);
 }
