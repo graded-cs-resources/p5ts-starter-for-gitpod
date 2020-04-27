@@ -1,4 +1,3 @@
-
 /** runs as soon as the assets are available */
 function setup() {
   // create a canvas
@@ -10,7 +9,7 @@ function setup() {
 
   // draw a background color (once) - pale yellow
   background("lightyellow");
-  
+
 }
 
 /** runs on a continuous loop after setup() runs */

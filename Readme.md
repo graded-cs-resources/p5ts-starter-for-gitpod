@@ -1,6 +1,6 @@
 # P5ts Starter Project
 
-In this project you can play with the [p5js](p5js.org) library usnng TypeScript. This library makes it very easy to create and draw on *drawing canvases* on web pages. You can read more about it at p5js.org.
+In this project you can play with the [p5js](p5js.org) library using TypeScript. This library makes it very easy to create and draw on *drawing canvases* on web pages. You can read more about it at p5js.org.
 
 If you use this project as your start, and you use an TypeScript-enabled code editor like [Visual Studio Code](code.visualstudio.com) or [Gitpod](http://www.gitpod.com) you will be able to hover your mouse over the various p5js functions to get some information about them, and you will also get autocomplete and other functionality.
 
